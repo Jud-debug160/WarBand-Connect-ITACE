@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warband Connect ITACE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-drum"></i>
+        <h1>Warband Connect ITACE</h1>
+      </div>
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Menú">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menú lateral -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3><i class="fas fa-music"></i> Menú</h3>
+      <button class="close-btn" onclick="toggleMenu()" aria-label="Cerrar menú">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <ul>
+      <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+      <li><a href="#profesores"><i class="fas fa-chalkboard-teacher"></i> Profesores</a></li>
+      <li><a href="#cursos"><i class="fas fa-graduation-cap"></i> Cursos</a></li>
+      <li><a href="#redes"><i class="fas fa-share-alt"></i> Redes sociales</a></li>
+      <li><a href="#inscripciones"><i class="fas fa-file-signature"></i> Inscripciones</a></li>
+      <li><a href="#faq"><i class="fas fa-question-circle"></i> Preguntas frecuentes</a></li>
+      <li><a href="#formulario-inscripcion"><i class="fas fa-edit"></i> Inscríbete</a></li>
+    </ul>
+    <div class="sidebar-footer">
+      <p>"Itace, Lealtad, Honor y Trabajo"</p>
+    </div>
+  </nav>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="toggleMenu()"></div>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    
+    <!-- Sección Inicio -->
+    <section id="inicio" class="section active">
+      <div class="section-header">
+        <h2><i class="fas fa-flag"></i> Bienvenidos</h2>
+      </div>
+      <div class="section-content">
+        <div class="hero">
+          <img src="imagenes/logo_itace.jpg.jpg" width="900" height="300" alt="Logo ITACE" class="logo-itace">
+          <div class="hero-text">
+            <h3>Warband Connect ITACE</h3>
+            <p>El espacio oficial donde podrás conocer toda la información sobre nuestra <strong>Banda de Guerra</strong>.</p>
+          </div>
+        </div>
+        
+        <div class="cards-container">
+          <div class="card">
+            <i class="fas fa-trophy"></i>
+            <h4>Representación</h4>
+            <p>Hemos representado al ITACE en eventos escolares, concursos regionales y ceremonias oficiales.</p>
+          </div>
+          
+          <div class="card">
+            <i class="fas fa-users"></i>
+            <h4>Comunidad</h4>
+            <p>Forma parte de un grupo disciplinado y talentoso con años de tradición.</p>
+          </div>
+          
+          <div class="card">
+            <i class="fas fa-info-circle"></i>
+            <h4>Información</h4>
+            <p>Encuentra todo sobre profesores, cursos, horarios, logros e inscripciones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Profesores -->
+    <section id="profesores" class="section">
+      <div class="section-header">
+        <h2><i class="fas fa-chalkboard-teacher"></i> Profesores</h2>
+      </div>
+      <div class="section-content">
+        <div class="image-container">
+          <img src="imagenes/profesores.jpg" width="500" height="900" alt="Profesores del ITACE" class="responsive-img">
+          <div class="image-caption">Director junto a la banda de guerra</div>
+        </div>
+        
+        <div class="content-text">
+          <p>El equipo de instructores de la Banda de Guerra ITACE se distingue por su pasión y dedicación a la formación de los estudiantes.</p>
+          
+          <div class="features">
+            <div class="feature">
+              <i class="fas fa-history"></i>
+              <p>Más de una década transmitiendo la tradición de bandas militares.</p>
+            </div>
+            
+            <div class="feature">
+              <i class="fas fa-discipline"></i>
+              <p>Énfasis en disciplina, liderazgo y formación integral.</p>
+            </div>
+            
+            <div class="feature">
+              <i class="fas fa-drum"></i>
+              <p>Perfeccionamiento de percusión y tambores por generaciones.</p>
+            </div>
+            
+            <div class="feature">
+              <i class="fas fa-graduation-cap"></i>
+              <p>Mentorización de nuevos integrantes y excelencia musical.</p>
+            </div>
+          </div>
+          
+          <div class="highlight-box">
+            <p><strong>Gracias a su experiencia</strong>, la banda ha participado en numerosos concursos y desfiles, logrando reconocimiento tanto a nivel local como regional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Cursos -->
+    <section id="cursos" class="section">
+      <div class="section-header">
+        <h2><i class="fas fa-graduation-cap"></i> Cursos</h2>
+      </div>
+      <div class="section-content">
+        <p class="intro-text">Cursos diseñados para que cualquier estudiante pueda integrarse, sin importar el nivel de experiencia.</p>
+        
+        <div class="courses-grid">
+          <!-- Curso 1 -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-play"></i>
+            </div>
+            <h4>Iniciación en Banda de Guerra</h4>
+           <p>Fundamentos del orden cerrado, posiciones básicas y primeros toques.</p>
+            <div class="course-schedule">
+              <i class="far fa-calendar-alt"></i>
+              <span>Lunes y Miércoles</span>
+              <i class="far fa-clock"></i>
+              <span>16:00 - 17:30</span>
+               </div>
+            <img src="imagenes/orden.jpg" alt="Orden y disiplina" class="course-img">
+          </div>
+          
+          <!-- Curso 2 -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-drum"></i>
+            </div>
+            <h4>Tambores Avanzados</h4>
+            <p>Técnicas de redoble, llamadas militares y coordinación en marchas.</p>
+            <div class="course-schedule">
+              <i class="far fa-calendar-alt"></i>
+              <span>Martes y Jueves</span>
+              <i class="far fa-clock"></i>
+              <span>17:00 - 18:30</span>
+            </div>
+            <img src="imagenes/tambores.png" alt="Tambores" class="course-img">
+          </div>
+          
+          <!-- Curso 3 -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-trumpet"></i>
+            </div>
+            <h4>Cornetas Profesionales</h4>
+            <p>Ejecución de notas militares, señalización y coordinación con la tropa.</p>
+            <div class="course-schedule">
+              <i class="far fa-calendar-alt"></i>
+              <span>Lunes y Viernes</span>
+              <i class="far fa-clock"></i>
+              <span>17:00 - 18:30</span>
+            </div>
+            <img src="imagenes/trompeta.jpg" alt="Cornetas" class="course-img">
+          </div>
+          
+          <!-- Curso 4 -->
+          <div class="course-card">
+            <div class="course-icon">
+              <i class="fas fa-user-tie"></i>
+            </div>
+            <h4>Formación y Liderazgo</h4>
+            <p>Desarrollo de disciplina, trabajo en equipo y liderazgo en eventos.</p>
+            <div class="course-schedule">
+              <i class="far fa-calendar-alt"></i>
+              <span>Miércoles y Viernes</span>
+              <i class="far fa-clock"></i>
+              <span>16:30 - 18:00</span>
+            </div>
+            <img src="imagenes/escolta.jpg" alt="Percusión" class="course-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Redes -->
+    <section id="redes" class="section">
+      <div class="section-header">
+        <h2><i class="fas fa-share-alt"></i> Redes Sociales</h2>
+      </div>
+      <div class="section-content">
+        <div class="social-container">
+          <div class="social-image">
+            <img src="imagenes/redes.jpg" alt="Redes sociales ITACE" class="responsive-img">
+          </div>
+          
+          <div class="social-links">
+            <p>Sigue nuestras actividades, logros y presentaciones:</p>
+            
+            <a href="https://www.facebook.com/share/1Z5kzJWoj7/" target="_blank" class="social-link facebook">
+              <i class="fab fa-facebook"></i>
+              <div>
+                <strong>Facebook Oficial</strong>
+                <span>Banda de Guerra ITACE</span>
+              </div>
+            </a>
+            
+            <a href="https://www.instagram.com/banda_de_guerra_itacianos?igsh=MXIxZWdOOD1wMHZrMQ==" target="_blank" class="social-link instagram">
+              <i class="fab fa-instagram"></i>
+              <div>
+                <strong>Instagram</strong>
+                <span>@BandaITACE</span>
+              </div>
+            </a>
+            
+            <a href="https://youtu.be/-nqzge8vb6k?si=Ifg_HBo3a4FgnxRl" target="_blank" class="social-link youtube">
+              <i class="fab fa-youtube"></i>
+              <div>
+                <strong>YouTube</strong>
+                <span>Demostracion musical banda de guerra ITACEs</span>
+           </div>
+           </a>
+          </div>
+        </div>
+        
+        <div class="motto">
+          <i class="fas fa-quote-left"></i>
+          <p>"Itace, Lealtad, Honor y Trabajo"</p>
+          <i class="fas fa-quote-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Inscripciones -->
+    <section id="inscripciones" class="section">
+      <div class="section-header">
+        <h2><i class="fas fa-file-signature"></i> Inscripciones</h2>
+      </div>
+      <div class="section-content">
+        <div class="enrollment-hero">
+          <img src="imagenes/inscripcion.jpg" alt="Inscripciones abiertas" class="enrollment-img">
+          <div class="enrollment-text">
+            <h3>¡Únete a la Banda de Guerra ITACE!</h3>
+            <p>Vive la experiencia de representar a tu institución con orgullo y formar parte de un grupo disciplinado y talentoso.</p>
+          </div>
+        </div>
+        
+        <div class="requirements">
+          <h4><i class="fas fa-list-check"></i> Requisitos:</h4>
+          <ul class="styled-list">
+            <li><i class="fas fa-check"></i> Ser estudiante activo del ITACE.</li>
+            <li><i class="fas fa-check"></i> Compromiso de asistir a entrenamientos.</li>
+            <li><i class="fas fa-check"></i> Respeto a la disciplina y valores del grupo.</li>
+            <li><i class="fas fa-check"></i> Actitud positiva y disposición para aprender.</li>
+            <li><i class="fas fa-check"></i> Participación activa en eventos programados.</li>
+          </ul>
+        </div>
+        
+        <div class="process">
+          <h4><i class="fas fa-clipboard-list"></i> Proceso de Inscripción:</h4>
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <p>Acude a la oficina de control escolar</p>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <p>Llena tu ficha de inscripción</p>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <p>Entrega documentos requeridos</p>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <p>Asiste a reunión informativa</p>
+            </div>
+            <div class="step">
+              <div class="step-number">5</div>
+              <p>Recibe uniforme y materiales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección FAQ -->
+    <section id="faq" class="section">
+      <div class="section-header">
+        <h2><i class="fas fa-question-circle"></i> Preguntas Frecuentes</h2>
+      </div>
+      <div class="section-content">
+        <div class="faq-image">
+          <img src="imagenes/preguntas.jpg" alt="Preguntas frecuentes" class="responsive-img">
+        </div>
+        
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Necesito experiencia previa?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>No, cualquier estudiante puede iniciar desde cero. La banda cuenta con instructores que guían a los principiantes paso a paso.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Da puntos extracurriculares?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Sí, se reconoce como actividad complementaria que suma a tu desarrollo académico y personal.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Puedo participar sin saber tocar?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Claro, aprenderás desde lo básico hasta un nivel avanzado. La banda ofrece cursos de iniciación.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Participan en eventos externos?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Sí, hemos representado al ITACE en desfiles, concursos, ceremonias cívicas y eventos culturales.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cuál es la edad mínima?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Todos los estudiantes activos del ITACE pueden integrarse, sin importar su grado.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>¿Cuántos días a la semana?</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Generalmente, los entrenamientos son 2 o 3 días a la semana, dependiendo del curso.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="thank-you">
+          <i class="fas fa-hands-helping"></i>
+          <p>Agradecemos a quienes han visitado nuestra página en busca de información sobre la banda de guerra.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Formulario -->
+    <section id="formulario-inscripcion" class="section">
+      <div class="section-header">
+        <h2><i class="fas fa-edit"></i> Inscríbete en Línea</h2>
+      </div>
+      <div class="section-content">
+        <div class="form-intro">
+          <p><strong>Forma parte de la tradición musical de la Banda de Guerra ITACE</strong>. Llena el formulario y nos pondremos en contacto contigo.</p>
+        </div>
+        
+        <div class="form-wrapper">
+          <form id="inscriptionForm" class="responsive-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre"><i class="fas fa-user"></i> Nombre completo:</label>
+                <input type="text" id="nombre" required placeholder="Ej: Juan Pérez López">
+              </div>
+              
+              <div class="form-group">
+                <label for="email"><i class="fas fa-envelope"></i> Correo electrónico:</label>
+                <input type="email" id="email" required placeholder="ejemplo@correo.com">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono"><i class="fas fa-phone"></i> Teléfono:</label>
+                <input type="tel" id="telefono" required placeholder="10 dígitos">
+              </div>
+              
+              <div class="form-group">
+                <label for="edad"><i class="fas fa-birthday-cake"></i> Edad:</label>
+                <input type="number" id="edad" min="12" max="60" required placeholder="12-60 años">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="curso"><i class="fas fa-graduation-cap"></i> Curso de interés:</label>
+                <select id="curso" required>
+                  <option value="">-- Selecciona --</option>
+                  <option value="trompeta">🎺 Trompeta</option>
+                  <option value="corneta">📯 Corneta</option>
+                  <option value="tambor">🥁 Tambor</option>
+                  <option value="percusion">🎼 Percusión</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="horario"><i class="fas fa-clock"></i> Horario preferido:</label>
+                <select id="horario" required>
+                  <option value="">-- Selecciona --</option>
+                  <option value="matutino">🌅 Matutino (8:00 - 11:00)</option>
+                  <option value="vespertino">🌇 Vespertino (15:00 - 18:00)</option>
+                  <option value="sabado">📅 Sábados (9:00 - 13:00)</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group full-width">
+              <label for="mensaje"><i class="fas fa-comment"></i> Mensaje adicional (opcional):</label>
+              <textarea id="mensaje" rows="3" placeholder="¿Tienes experiencia previa? ¿Alguna pregunta específica?"></textarea>
+            </div>
+            
+            <div class="form-submit">
+              <button type="submit" class="submit-btn" id="submitBtn">
+                <span id="btnText"><i class="fas fa-paper-plane"></i> Enviar Inscripción</span>
+                <span id="btnLoading" style="display:none;"><i class="fas fa-spinner fa-spin"></i> Enviando...</span>
+              </button>
+            </div>
+            
+            <div id="formMessage" class="form-message"></div>
+          </form>
+          
+          <div class="form-note">
+            <p><i class="fas fa-info-circle"></i> Tus datos se guardan de forma segura en nuestra base de datos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Botón flotante para volver arriba -->
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // CÓDIGO DEL MENÚ RESPONSIVE
+    function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.querySelector(".overlay");
+      const menuBtn = document.querySelector(".menu-btn");
+      
+      sidebar.classList.toggle("active");
+      overlay.classList.toggle("active");
+      menuBtn.classList.toggle("active");
+      document.body.classList.toggle("no-scroll");
+    }
+
+    // Mostrar/ocultar secciones
+    document.querySelectorAll("#sidebar a").forEach(link => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute("href").substring(1);
+
+        // Ocultar todas las secciones
+        document.querySelectorAll(".section").forEach(sec => {
+          sec.classList.remove("active");
+        });
+
+        // Mostrar solo la seleccionada
+        document.getElementById(targetId).classList.add("active");
+
+        // Cerrar menú en móviles
+        if (window.innerWidth < 992) {
+          toggleMenu();
+        }
+
+        // Scroll suave a la sección en móviles
+        if (window.innerWidth < 768) {
+          setTimeout(() => {
+            document.getElementById(targetId).scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }, 300);
+        }
+      });
+    });
+
+    // Mostrar primera sección al cargar
+    window.addEventListener("load", () => {
+      document.querySelector(".section").classList.add("active");
+    });
+
+    // Cerrar menú al hacer clic fuera
+    document.addEventListener("click", (e) => {
+      const sidebar = document.getElementById("sidebar");
+      const menuBtn = document.querySelector(".menu-btn");
+      
+      if (window.innerWidth < 992 && 
+          sidebar.classList.contains("active") && 
+          !sidebar.contains(e.target) && 
+          !menuBtn.contains(e.target)) {
+        toggleMenu();
+      }
+    });
+
+    // FAQ Acordeón
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+
+    // Botón volver arriba
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Cerrar menú con ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const sidebar = document.getElementById("sidebar");
+        if (sidebar.classList.contains("active")) {
+          toggleMenu();
+        }
+      }
+    });
+
+    // =============================================
+    // CÓDIGO SUPABASE PARA EL FORMULARIO
+    // =============================================
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('inscriptionForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        if (!form) {
+            console.error('No se encontró el formulario');
+            return;
+        }
+        
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Obtener datos del formulario
+            const datos = {
+                nombre: document.getElementById('nombre').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                telefono: document.getElementById('telefono').value.trim(),
+                edad: document.getElementById('edad').value,
+                curso: document.getElementById('curso').value,
+                horario: document.getElementById('horario').value,
+                mensaje: document.getElementById('mensaje').value.trim()
+            };
+            
+            // Validaciones
+            if (!datos.curso) {
+                mostrarMensaje('❌ Por favor, selecciona un curso', 'error');
+                return;
+            }
+            
+            if (!datos.horario) {
+                mostrarMensaje('❌ Por favor, selecciona un horario', 'error');
+                return;
+            }
+            
+            if (!/^\d{10}$/.test(datos.telefono)) {
+                mostrarMensaje('❌ El teléfono debe tener 10 dígitos', 'error');
+                return;
+            }
+            
+            // Mostrar estado de envío
+            mostrarMensaje('<i class="fas fa-spinner fa-spin"></i> Enviando tu inscripción...', 'info');
+            const btn = document.getElementById('submitBtn');
+            btn.disabled = true;
+            document.getElementById('btnText').style.display = 'none';
+            document.getElementById('btnLoading').style.display = 'inline';
+            
+            try {
+                // Enviar a Supabase
+                const resultado = await guardarInscripcionSupabase(datos);
+                
+                if (resultado.success) {
+                    mostrarMensaje('<i class="fas fa-check-circle"></i> ¡Inscripción enviada con éxito!<br>Te contactaremos en ' + datos.email, 'success');
+                    form.reset();
+                } else {
+                    mostrarMensaje('<i class="fas fa-exclamation-circle"></i> Error: ' + resultado.error, 'error');
+                }
+            } catch (error) {
+                mostrarMensaje('<i class="fas fa-exclamation-triangle"></i> Error de conexión. Intenta de nuevo.', 'error');
+                console.error(error);
+            } finally {
+                // Restaurar botón
+                btn.disabled = false;
+                document.getElementById('btnText').style.display = 'inline';
+                document.getElementById('btnLoading').style.display = 'none';
+            }
+        });
+        
+        function mostrarMensaje(texto, tipo) {
+            formMessage.innerHTML = texto;
+            formMessage.className = 'form-message ' + tipo;
+        }
+    });
+  </script>
+
+<!-- INCLUIR SUPABASE -->
+<script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+<script>
+// CONFIGURACIÓN SUPABASE - REEMPLAZA CON TUS DATOS
+const SUPABASE_URL = 'https://zealnljclicynksshqtq.supabase.co'; // ← TU URL
+const SUPABASE_KEY = 'sb_publishable_QO29F9n7PDGVl4SFglsecw_UbOKxRep'; // ← TU PUBLISHABLE KEY
+
+// Crear cliente Supabase
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+// Función para guardar inscripciones
+async function guardarInscripcionSupabase(datos) {
+    console.log('📤 Enviando a Supabase:', datos);
+    
+    try {
+        const { data, error } = await supabase
+            .from('inscripciones')
+            .insert([
+                {
+                    nombre_completo: datos.nombre,
+                    email: datos.email,
+                    telefono: datos.telefono,
+                    edad: parseInt(datos.edad),
+                    curso_seleccionado: datos.curso,
+                    horario_preferido: datos.horario,
+                    mensaje_adicional: datos.mensaje || '',
+                    fecha_registro: new Date().toISOString(),
+                    estado: 'pendiente'
+                }
+            ]);
+        
+        if (error) {
+            console.error('❌ Error Supabase:', error);
+            return { 
+                success: false, 
+                error: 'Error: ' + error.message 
+            };
+        }
+        
+        console.log('✅ Éxito:', data);
+        return { 
+            success: true, 
+            message: 'Guardado en base de datos' 
+        };
+        
+    } catch (error) {
+        console.error('❌ Error:', error);
+        return { 
+            success: false, 
+            error: 'Error de conexión' 
+        };
+    }
+}
+
+console.log('🔗 Supabase configurado para Warband ITACE');
+</script>
+
+</body>
+</html>
